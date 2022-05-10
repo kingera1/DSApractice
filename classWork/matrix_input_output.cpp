@@ -1,26 +1,24 @@
-#include<iostream>
-
+#include<bits/stdc++.h>
 using namespace std;
-
 int main()
 {
-    int row_size,col_size;
-    cin>>row_size;
-    cin>>col_size;
-    int matrix[row_size][col_size];
+    int n,m;
+    cin>>n;
+    cin>>m;
+    int matrix[n][m];
     int i,j;
     cout<<"Enter the Matrix Element:"<<endl;
-    for(i=0;i<row_size;i++)
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<col_size;j++)
+        for(j=0;j<m;j++)
         {
             cin>>matrix[i][j];
         }
     }
-    cout<<"Given Matrix is:"<<endl;
-    for(i=0;i<row_size;i++)
+    cout<<"Your inputted Matrix is:"<<endl;
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<col_size;j++)
+        for(j=0;j<m;j++)
         {
             cout<<matrix[i][j]<<" ";
         }
