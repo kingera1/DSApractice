@@ -4,8 +4,7 @@ public:
     ListNode *fast=h;
     ListNode *slow= h;
     if(h == NULL){
-        return 0;
-        
+        return 0;    
     }    
     else{
         while(fast&&fast->next)
@@ -13,8 +12,7 @@ public:
 		fast=fast->next->next;
 		slow=slow->next;
 	}
-	return slow;
-        
+	return slow;        
     } 
 	
 }
