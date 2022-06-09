@@ -4,9 +4,10 @@ public:
         if (h == NULL){
             return 0;
         }
-        h->next=removeElements(h->next,v);
-        if(h->val==v){
-            ListNode* temp = h->next;
+        ListNode* temp = h->next;
+        h->next=removeElements(temp,v);
+        
+        if(h->val==v){            
             delete h;
             return temp;
         }
