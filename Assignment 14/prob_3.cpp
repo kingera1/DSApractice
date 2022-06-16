@@ -4,13 +4,15 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
-    int s = n%10;
-    for (int i = 0;i<=s;i++){
-         int s = n%10;
+    string a = to_string(n);
+    int k = a.size();
+    for (int i = 0;i<=k;i++){
+         int b = n%10;
          n = n/10;
-        for (int j = 1;j<=s;j++){
+        for (int j = 1;j<=b;j++){
             cout<<"#";
         }         
      cout<<endl;
     }
 }
+
