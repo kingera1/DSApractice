@@ -1,7 +1,7 @@
 class Solution {
 public:
 	int firstBadVersion(int n) {
-		int l=1;
+		int l=0;
 		while(l<=n)
 		{
 			int mid = l + (n-l)/2;
