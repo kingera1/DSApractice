@@ -1,0 +1,16 @@
+class Solution {
+public:
+    vector<int> numberOfPairs(vector<int>& nums) {
+        
+        sort(nums.begin(), nums.end());
+        
+        int n_p = 0;
+        for (int i = 1; i < nums.size(); i++){
+            if (nums[i] == nums[i - 1]){
+                n_p++;
+                i++;
+            }
+        }
+        return { n_p, (int)nums.size() - n_p*2};
+    }
+};
