@@ -2,7 +2,7 @@ int myAtoi(string s) {
         int res = 0 ;
         int sign = 0;
         int i = 0;
-
+        int k = 20;
         while(s[i] == ' ') i++;
         if(s[i] == '-' || s[i] == '+') {
             sign = -1 * (s[i++] == '-'); 
